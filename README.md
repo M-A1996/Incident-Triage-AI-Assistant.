@@ -2,8 +2,6 @@
 
 An AI on-call assistant built with the **Claude API**. Describe an incident in plain English ("checkout is failing with 500 errors since 2pm") and Claude investigates the services with tools, then returns a **validated, structured triage report** — severity, affected services, likely cause, evidence, next steps and confidence.
 
-Built while working through Anthropic's *Building with the Claude API* course.
-
 ## How it works
 
 1. **Tool use** — Claude calls `list_services` and `get_service_metrics` to read error rates, p95 latency and recent deploys (demo data standing in for a monitoring system).
